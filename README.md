@@ -161,3 +161,5 @@ If you are confusing about the use of backtick here, please check this [Lexical 
 ```
 To use a reserved word as an identifier, put a backtick (`) before and after it. For example, class is not a valid identifier, but `class` is valid. The backticks are not considered part of the identifier; `x` and x have the same meaning.
 ```
+
+However, this appears to be a compiler bug since self seems to be re-assigned here. This is confirmed by Chris Lattner, you can read the whole thread [here](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160118/007425.html). So, to sum it up, we should all stick with the use of `strongSelf`.
