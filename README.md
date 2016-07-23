@@ -114,7 +114,7 @@ And then we will continue with `weakSelf` in the closure.
 
 Well, here in Swift, the logic is gonna be the same, our first attemption is to make a `weak` copy of self
 ```
-    override func viewDidLoad() {
+override func viewDidLoad() {
     super.viewDidLoad()
     
     myPrettyThing.doStuff { [weak self] in
